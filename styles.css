@@ -71,7 +71,7 @@ li {
     align-items: flex-end;
     justify-content: center;
 
-    background-image: url("/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
 
     position: relative;
