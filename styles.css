@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf'); /*URL to font*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow:hidden;
+}
+
+fieldset {
+    position: relative;
+    box-shadow: 0 4px 9px rgba(35, 35, 35, 0.2);
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 45px;
+    padding-top: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+  } 
+
+label,input {
+    display:flex;
+    flex-direction:column;
+  }
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 900;
+}
+
+input {
+    min-width: 16vw;
+    height: 32px;
+    border-radius: 4px;
+    border:0;
+    border: 1px solid rgb(229,231,235);
+    margin-top: 3px;
+}
+
+input:focus {
+    outline: none;
+    border:0;
+    border: 1px solid blue;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
+}
+
+li {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.section1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background-image: url("/background.jpg");
+    background-size: cover;
+
+    position: relative;
+
+    width: 30%;
+    height: 100vh;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(249 250 251)
+}
+
+.transparent-layer {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 110px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    top: 168px;
+}
+
+.transparent-layer img {
+    height: 100px;
+    width: auto;
+}
+
+.odin {
+    display: inline-block;
+    line-height: 60px;
+    height: 35px;
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 78px;
+}
+
+
+
+.photo-credit {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+a.link:link {
+    color: rgb(255, 255, 255, 0.7);
+}
+  
+  /* visited link */
+a.link:visited {
+    color: rgb(255, 255, 255, 0.7);
+}
+  
+  /* mouse over link */
+a.link:active {
+    color: rgb(255, 255, 255, 0.7);
+}
+  
+  /* selected link */
+a.link:hover {
+    color: rgb(255, 255, 255, 0.7);
+}
+
+
+
+
+.mktg-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    
+    margin-bottom: 60px;
+    margin-left: 45px;
+}
+
+.submit-button {
+    font-weight: 900;
+    font-size: 15px;
+
+    background-color: #596D48;
+    color: white;
+    border: none;
+    height: 2.8em;
+    width: 180px;
+    border-radius: 7px;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+    background-color: rgb(249 250 251);
+    border: 2px solid #596D48;
+    color: #596D48;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+.right-third {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-third-link {
+    font-weight: 900;
+}
+
+a.right-third-link:link {
+    color: #596D48;
+    text-decoration: none;
+}
+  
+  /* visited link */
+a.right-third-link:visited {
+    color: #596D48;
+    text-decoration: none;
+}
+  
+  /* mouse over link */
+a.right-third-link:active {
+    color: #596D48;
+    text-decoration: none;
+}
+  
+  /* selected link */
+a.right-third-link:hover {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.form-columns ul {
+    list-style-type: none;
+}
+
+.all-inputs {
+    display: flex;
+    margin-top: 58px;
+}
+
+.left-inputs {
+    margin-left: -7px;
+}
+
+.right-third button {
+    margin-bottom: 14px;
+}
+
+.password-error {
+    border: 1px solid rgb(191 51 49)
+}
+
+.password-error-message-hidden {
+    color: rgb(191 51 49);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    opacity: 0;
+}
+
+.password-error-message-shown {
+    opacity: 1;
+}
+
+.button-error,
+.button-error:hover,
+.button-error:active
+ {
+    font-weight: 900;
+    font-size: 15px;
+
+    background-color: #a1a1a1;
+    color: white;
+    border: none;
+    height: 2.8em;
+    width: 180px;
+    border-radius: 7px;
+    box-shadow: 1px 3px 4px rgb(0, 0, 0, 0.2);
+    transform: scale(1);
+}
